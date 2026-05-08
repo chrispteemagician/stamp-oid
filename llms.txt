@@ -1,0 +1,13 @@
+# stamp-oid
+
+> Free AI tool for stamp collectors. Identify, value, and learn about stamps from around the world.
+
+## Pages
+
+- [Home](https://stamp-oid.co.uk/): Home — AI stamp identifier and valuation for collectors
+
+## About
+
+Part of the FeelFamous ecosystem — free AI tools for specialists, collectors, and personal sellers.
+Built by Chris P Taylor (Doc Strange). PLUR. World domination through kindness. One ember at a time.
+Contact: chris@chrisptee.com
