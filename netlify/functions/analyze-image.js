@@ -167,7 +167,7 @@ Example: "Ah yes, the legendary 1990 Forever stamp - truly a relic of... 2010. I
           contents: [{
             parts: [
               { text: systemPrompt },
-              { inline_data: { mime_type: "image/jpeg", data: image } }
+              { inline_data: { mime_type: (image.match(/^data:(image\/\w+);base64,/) || [])[1] || 'image/jpeg', data: image.replace(/^data:image\/\w+;base64,/, '') } }
             ]
           }]
         })
