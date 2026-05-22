@@ -117,8 +117,7 @@
 <!-- Free-to-use banner -->
 <div style="background: linear-gradient(135deg, #8b2635, #6b1c28);" class="text-center py-3 px-4">
     <p class="text-sm font-semibold text-cream">
-        Free to use, forever. Join the <a href="https://feelfamous.co.uk" class="underline font-bold">FeelFamous Family</a> to unlock
-        <span class="bg-yellow-300 text-black px-2 py-0.5 rounded font-bold text-xs">PRO</span> features across ALL -Oid Apps.
+        <strong>Free to use.</strong> Sign in to join the village — from <strong>£3/month on Patreon</strong>. <a href="https://feelfamous.co.uk" class="underline font-bold">feelfamous.co.uk</a>
     </p>
 </div>
 
@@ -613,33 +612,61 @@
     </div>
 
     <div class="card">
-        <h3 class="font-bold text-lg mb-4 text-center">Village Membership</h3>
-        <div class="border-2 border-gray-200 rounded-2xl p-5 mb-4">
-            <h4 class="font-bold mb-2">Free Villager</h4>
-            <ul class="text-sm text-gray-600 space-y-1">
-                <li>- AI stamp identification (unlimited)</li>
-                <li>- Ask Stanley chatbot</li>
-                <li>- Learning library</li>
-                <li>- what3words Meet tool</li>
-                <li>- Village access</li>
-            </ul>
+        <h3 class="font-bold text-lg mb-2 text-center">Join the Village</h3>
+        <p class="text-sm text-gray-500 text-center mb-4">Everything here is free to use. Supporting the village keeps it growing.</p>
+        <div class="space-y-3 mb-4">
+            <div class="border-2 border-gray-200 rounded-2xl p-5">
+                <div class="flex justify-between items-center mb-2">
+                    <h4 class="font-bold">🏡 Villager</h4>
+                    <span class="font-bold" style="color:#8b2635;">£3/month</span>
+                </div>
+                <ul class="text-sm text-gray-600 space-y-1 mb-2">
+                    <li>✓ Your hut in the village</li>
+                    <li>✓ Kudos &amp; leaderboard</li>
+                    <li>✓ Village activity feed</li>
+                    <li>✓ Recognised across all -Oids</li>
+                </ul>
+                <p class="text-xs text-gray-400">Cancel anytime.</p>
+            </div>
+            <div class="border-2 rounded-2xl p-5" style="border-color: #8b2635; background: linear-gradient(135deg, #fff8f8, #fff0f0);">
+                <div class="flex justify-between items-center mb-2">
+                    <h4 class="font-bold">⭐ Elder</h4>
+                    <span class="font-bold" style="color:#8b2635;">£7/month</span>
+                </div>
+                <ul class="text-sm text-gray-600 space-y-1 mb-2">
+                    <li>✓ Everything in Villager</li>
+                    <li>✓ Mini hamlet — your own page</li>
+                    <li>✓ Named in the village roll</li>
+                    <li>✓ Elder badge site-wide</li>
+                </ul>
+                <p class="text-xs text-gray-400">Cancel anytime.</p>
+            </div>
+            <div class="border-2 rounded-2xl p-5" style="border-color: #c9a227; background: linear-gradient(135deg, #fffbf0, #fff8e8);">
+                <div class="flex justify-between items-center mb-1">
+                    <h4 class="font-bold">👑 Founder</h4>
+                    <span class="font-bold" style="color:#b8860b;">£15/month</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:#b8860b;">Best Value</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-2">
+                    <li>✓ Full hamlet suite</li>
+                    <li>✓ Direct line to Chris</li>
+                    <li>✓ Early access to new -Oids</li>
+                    <li>✓ 300 kudos on joining</li>
+                </ul>
+                <p class="text-xs text-gray-400">Cancel anytime.</p>
+            </div>
         </div>
-        <div class="border-2 rounded-2xl p-5 mb-4" style="border-color: #8b2635; background: linear-gradient(135deg, #fff8f8, #fff0f0);">
-            <div class="flex justify-between items-center mb-2">
-                <h4 class="font-bold">Pro Member</h4>
-                <span class="bg-yellow-300 text-black px-2 py-0.5 rounded font-bold text-xs">PATREON</span>
-            </div>
-            <ul class="text-sm text-gray-600 space-y-1 mb-4">
-                <li>✓ Unlimited scan history</li>
-                <li>✓ Kudos points & leaderboard</li>
-                <li>✓ Village profile</li>
-                <li>✓ Early access to new -Oid apps</li>
-                <li>✓ Direct line to Chris</li>
-            </ul>
-            <div id="villageSignIn">
-                <div id="patreonStatusVillage" class="hidden mb-3 text-sm"></div>
-                <button id="patreonSignInBtnVillage" onclick="signInWithPatreon()" class="btn btn-postal w-full text-sm">Sign in with Patreon</button>
-            </div>
+        <div id="villageSignIn">
+            <div id="patreonStatusVillage" class="hidden mb-3 text-sm"></div>
+            <button id="patreonSignInBtnVillage" onclick="signInWithPatreon()" class="btn btn-postal w-full text-sm" style="min-height:48px;">Sign in with Patreon</button>
+        </div>
+        <a href="https://www.patreon.com/chrisptee" target="_blank" class="btn btn-gold w-full mt-2 text-sm text-center" style="min-height:48px;display:block;">Join on Patreon</a>
+        <p class="text-xs text-gray-400 text-center mt-1 mb-4">Cancel anytime. Your price locks in while you stay.</p>
+        <div class="p-4 rounded-2xl text-center" style="background: #fff8f8; border: 1px solid #e5d8d8;">
+            <p class="font-bold text-sm mb-1" style="color:#8b2635;">🤝 Invite a friend</p>
+            <p class="text-xs text-gray-600 mb-3">Earn 50 kudos for every person who joins through your link.</p>
+            <button onclick="copyInviteLink()" class="btn btn-postal w-full text-sm" style="min-height:44px;">Copy your invite link</button>
+            <p class="text-xs text-center mt-2 hidden" id="inviteCopied" style="color:#8b2635;">Copied! ✓</p>
         </div>
     </div>
 
@@ -995,6 +1022,18 @@ function escapeHtml(text) {
 // ===== PATREON FUNCTIONS =====
 function signInWithPatreon() {
     window.location.href = PATREON_OAUTH_URL;
+}
+
+function copyInviteLink() {
+    const userId = (window.currentUser && window.currentUser.id) ? window.currentUser.id : '';
+    const link = `${window.location.origin}${userId ? '?ref=' + userId : ''}`;
+    navigator.clipboard.writeText(link).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = link; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta);
+    });
+    const el = document.getElementById('inviteCopied');
+    if (el) { el.classList.remove('hidden'); setTimeout(() => el.classList.add('hidden'), 3000); }
 }
 
 function restorePatreonSession() {
