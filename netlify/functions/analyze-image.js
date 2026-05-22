@@ -1,4 +1,4 @@
-// Stamp-Oid: Philatelic Expert
+﻿// Stamp-Oid: Philatelic Expert
 // Netlify Function using Gemini Vision API (native fetch - no npm required)
 
 exports.handler = async (event) => {
@@ -162,7 +162,7 @@ Example: "Ah yes, the legendary 1990 Forever stamp - truly a relic of... 2010. I
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
       {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Referer': 'https://feelfamous.co.uk/' },
         body: JSON.stringify({
           contents: [{
             parts: [

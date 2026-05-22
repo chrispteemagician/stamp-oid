@@ -1,4 +1,4 @@
-// Ask Stanley — Stamp-Oid Chatbot
+﻿// Ask Stanley — Stamp-Oid Chatbot
 // 65 years of philately. Been collecting since 1961. Straight talker. Yorkshire dry wit.
 
 exports.handler = async (event) => {
@@ -86,7 +86,7 @@ Be Stanley. Be straight. Be the expert at the fair table everyone deserves but r
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
       {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Referer': 'https://feelfamous.co.uk/' },
         body: JSON.stringify({
           system_instruction: { parts: [{ text: systemPrompt }] },
           contents: contents,

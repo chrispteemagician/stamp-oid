@@ -1,0 +1,8 @@
+{
+  "name": "magic-oid-v3",
+  "version": "3.0.0",
+  "description": "Magic-Oid - The One Image Detective Droid",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  }
+}
