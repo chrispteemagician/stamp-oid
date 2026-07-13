@@ -182,7 +182,7 @@
 
 <!-- FOUNDING MEMBER BANNER -->
 <div class="founding-banner">
-    🏡 It&#39;s free to use. <strong>£4.95/month keeps the bots out.</strong> Founding Member price — first 1,000 only. After that, the door goes up.&nbsp;
+    🏡 It&#39;s free to use, always will be. <strong>£4.95/month</strong> is there if you want to support the village and get your own hut.&nbsp;
     <a href="https://www.patreon.com/chrisptee" target="_blank" rel="noopener noreferrer">Join the village →</a>
 </div>
 
@@ -309,6 +309,14 @@
             <p class="text-sm font-semibold mb-3">Sign in to save results, earn Kudos, and join the village</p>
             <div id="patreonStatus" class="hidden mb-3 text-sm"></div>
             <button id="patreonSignInBtn" onclick="signInWithPatreon()" class="btn btn-postal w-full text-sm">Sign in with Patreon</button>
+        </div>
+        <div id="honestyBox" class="mt-4 p-4 rounded-2xl text-center" style="background: #f5f0e0; border: 2px solid #e5d8d8;">
+            <p class="text-xs text-gray-500 leading-relaxed">
+                This is free, always will be — that's not changing. It costs real money to keep running. Tell a mate who'd find it useful, or pay it forward some other way. That's genuinely enough.
+            </p>
+            <p class="text-xs text-gray-400 mt-2">
+                If you'd rather say thanks with money: a one-off <a href="https://buymeacoffee.com/chrispteemagician" target="_blank" rel="noopener noreferrer" class="text-postal font-semibold">buy me a coffee</a> covers it, or <a href="https://www.patreon.com/chrisptee" target="_blank" rel="noopener noreferrer" class="text-postal font-semibold">Patreon</a> if you want to be a regular. Either way, nothing here was ever locked behind it.
+            </p>
         </div>
     </div>
 
@@ -1182,6 +1190,7 @@ function showPatreonStatus() {
         const btn = document.getElementById(id);
         if (btn) btn.classList.add('hidden');
     });
+    document.getElementById('honestyBox')?.classList.toggle('hidden', !!patreonSession.isPro);
     if (patreonSession.isPro) {
         document.getElementById('signInPrompt')?.classList.add('hidden');
         document.getElementById('villageSignIn')?.classList.add('hidden');
