@@ -9,5 +9,5 @@
 ## About
 
 Part of the FeelFamous ecosystem — free AI tools for specialists, collectors, and personal sellers.
-Built by Chris P Taylor (Doc Strange). PLUR. World domination through kindness. One ember at a time.
+Built by Chris P Taylor (Doc Strange). PLUR. Just trying to be useful. One ember at a time.
 Contact: chris@chrisptee.com
