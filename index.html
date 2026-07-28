@@ -1277,8 +1277,8 @@ async function loadRecentActivity() {
         const { data } = await sb.from('users').select('username, created_at').order('created_at', { ascending: false }).limit(5);
         if (data && data.length > 0) {
             document.getElementById('activityList').innerHTML = data.map(u =>
-                `<p>${CONFIG.loadingIcon} <strong>${u.username}</strong> joined the village!</p>`
-            ).join('');
+                `<p>${CONFIG.loadingIcon} <strong>${escapeHtml(u.username)}</strong> joined the village!</p>`
+            ).join(''); // username is user-submitted at signup — must be escaped before innerHTML render
         } else {
             document.getElementById('activityList').innerHTML = '<p class="text-center text-gray-400">Be the first to join!</p>';
         }
@@ -1299,7 +1299,7 @@ async function loadLeaderboard() {
                     <div class="flex items-center gap-3">
                         <span class="text-xl font-bold text-postal">#${i+1}</span>
                         <span class="text-sm">${badge}</span>
-                        <span class="font-bold">@${u.username}</span>
+                        <span class="font-bold">@${escapeHtml(u.username)}</span>
                     </div>
                     <span class="text-postal font-bold">${u.kudos} Kudos</span>
                 </div>`;
