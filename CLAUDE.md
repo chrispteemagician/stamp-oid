@@ -45,51 +45,30 @@ Part of the FeelFamous -Oid ecosystem. Built by Chris P Taylor (Doc Strange).
 ## Free-to-use philosophy (Chris, 2026-07-13 — read before adding any gate)
 
 The core tool is free for everyone, no sign-in, no lock icon, no "Villager+
-only" banner. Stamp identification (`analyze-image.js`) and Ask Stanley
-(`chat-stanley.js`) have never had an `isPro`/tier check in the function
-code — they run unlimited and ungated. `patreon-auth.js` only ever drives a
-badge ("Pro unlocked") and tier display, never a feature block. Don't gate
-the tool itself behind Patreon.
+only" banner. Don't gate the tool itself behind Patreon.
 
-**What Patreon tiers are for:** genuine extras that cost Chris ongoing
-hosting/upkeep and aren't required to use the free tools — a hosted hut/
-hamlet page in the village, kudos + leaderboard + activity feed (all tied to
-a persistent Supabase account), Elder/Founder badges. Frame honestly, never
-as a shame-lock ("🔒 ... Unlock →"). No tier-comparison shop windows, no
+**What Patreon/paid tiers are for:** genuine extras that cost ongoing hosting/
+upkeep and aren't required to use the tool. Frame honestly, never as a
+shame-lock ("🔒 ... Unlock →"). No tier-comparison shop windows, no
 LinkedIn-style "join my community to see what I can do."
 
-**2026-07-13 audit and fix:**
-- Removed a scarcity/urgency dark pattern from the top banner: "Founding
-  Member price — first 1,000 only. After that, the door goes up." This is
-  the same pattern found and removed in designer-oid — a fake artificial
-  deadline. Replaced with an honest line: it's free, always will be, £4.95
-  is there if you want to support the village.
-- The `#signInPrompt` block after a scan result ("Sign in to save results,
-  earn Kudos, and join the village") was dead code — it starts with the
-  `hidden` class and nothing in the JS ever removes it, so it has never
-  actually been shown to a user. Left it in place as-is (out of scope to fix
-  an unrelated bug) but did NOT reuse it for the honesty box below — added a
-  new sibling div instead so the two don't get tangled.
-- Added a new `#honestyBox` div, shown by default under the result view
-  after every scan (identification already ran free either way) — the
-  one-time low-key ask: free to use, tell a mate, buy-me-a-coffee
-  (buymeacoffee.com/chrispteemagician) if you want to say thanks one-off,
-  Patreon (patreon.com/chrisptee) if you want to be a regular. Hidden via
-  `showPatreonStatus()` when `patreonSession.isPro` is true
-  (`document.getElementById('honestyBox')?.classList.toggle('hidden',
-  !!patreonSession.isPro)`).
-- Tier cards (Villager £4.95/mo, Elder — earned, Founder £14.95/mo) were
-  already honestly framed — hut/hamlet pages, kudos, leaderboard, badges —
-  no false claims of gating a free feature. Left unchanged.
+**The ask, when there is one:** one honest, low-key line after the task
+completes — free to use, tell a mate if it helped, buy-me-a-coffee if you
+want to say thanks (one-off, `buymeacoffee.com/chrispteemagician`), Patreon
+if you want to be a regular. Not a gate. Not gamified.
 
-**The ask, when there is one:** one honest, low-key line after the result
-displays — free to use, tell a mate if it helped, buy-me-a-coffee if you
-want to say thanks (one-off), Patreon if you want to be a regular. Not a
-gate. Not gamified.
+Full doctrine: `[[concepts/the-tip-jar-doctrine]]`, mechanical pattern:
+`[[tech/free-to-use-degate-skill]]`.
 
-This same pattern is rolling out across the rest of the -oid ecosystem —
-check other repos' CLAUDE.md for the ecosystem-wide version before assuming
-this file is the only place it applies.
+**Repo-specific facts (don't relitigate):**
+- `analyze-image.js` and `chat-stanley.js` never had an `isPro`/tier check —
+  confirmed ungated. `patreon-auth.js` only ever drives a badge/tier display.
+- Patreon tiers here specifically fund: hosted hut/hamlet page, kudos,
+  leaderboard, activity feed (persistent Supabase account).
+- 2026-07-13 fixes: removed a false-scarcity "Founding Member — first 1,000
+  only" banner; left the dead `#signInPrompt` block alone (never actually
+  shown, `hidden` class never removed by JS); added a new sibling
+  `#honestyBox` div rather than reusing the dead one.
 
 ---
 
