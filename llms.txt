@@ -4,10 +4,18 @@
 
 ## Pages
 
-- [Home](https://stamp-oid.co.uk/): Home — AI stamp identifier and valuation for collectors
+- [Home](https://stamp-oid.co.uk/): Home — AI stamp identifier and valuation for collectors, plus Ask Stanley chat. Free, no sign-in required.
+
+## Membership (optional — never required to use the identify tool)
+
+Patreon campaign: https://www.patreon.com/chrisptee
+
+- Villager — £4.95/mo — hut in the village, kudos, leaderboard, activity feed
+- Elder — earned, not bought — everything in Villager + mini hamlet page + village roll
+- Founder — £14.95/mo — full hamlet suite, direct line to Chris, early access, 300 kudos on joining
 
 ## About
 
 Part of the FeelFamous ecosystem — free AI tools for specialists, collectors, and personal sellers.
 Built by Chris P Taylor (Doc Strange). PLUR. Just trying to be useful. One ember at a time.
-Contact: chris@chrisptee.com
+Contact: chris@chrisptee.co.uk
