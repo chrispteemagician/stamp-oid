@@ -159,7 +159,7 @@ Example: "Ah yes, the legendary 1990 Forever stamp - truly a relic of... 2010. I
 
     // Call Gemini API
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Referer': 'https://www.feelfamous.co.uk/' },
