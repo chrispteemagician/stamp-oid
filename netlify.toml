@@ -8,8 +8,9 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://feelfamous.co.uk/stamp"
+  status = 301
+  force = true
 
 [functions]
   node_bundler = "esbuild"
